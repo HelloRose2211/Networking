@@ -24,7 +24,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="J9g-Pw-HxC">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="J9g-Pw-HxC" customClass="UserActionCell" customModule="Networking" customModuleProvider="target">
                                 <rect key="frame" x="17" y="0.0" width="286" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TLV-r4-db1">
@@ -76,12 +76,53 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="P1h-LV-OFb">
-                                <rect key="frame" x="0.0" y="44.5" width="320" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="101" id="P1h-LV-OFb" customClass="CourseCell" customModule="Networking" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="320" height="101"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P1h-LV-OFb" id="6VT-PA-w7X">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D7W-G5-Swq">
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="101"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="158" id="Ncp-0b-eJ4"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7r8-R4-nF8">
+                                            <rect key="frame" x="166" y="5" width="109" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lessons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kv-xg-215">
+                                            <rect key="frame" x="166" y="40" width="47" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8I-Ni-kQu">
+                                            <rect key="frame" x="166" y="69" width="31" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="7r8-R4-nF8" firstAttribute="top" secondItem="6VT-PA-w7X" secondAttribute="topMargin" constant="-6" id="7CG-zX-P2d"/>
+                                        <constraint firstAttribute="trailing" secondItem="7r8-R4-nF8" secondAttribute="trailing" constant="45" id="9vR-Cg-G54"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6kv-xg-215" secondAttribute="trailing" constant="20" symbolic="YES" id="Bfo-1b-8HM"/>
+                                        <constraint firstItem="7r8-R4-nF8" firstAttribute="leading" secondItem="D7W-G5-Swq" secondAttribute="trailing" constant="8" id="GqZ-sz-Zhw"/>
+                                        <constraint firstItem="6kv-xg-215" firstAttribute="top" secondItem="7r8-R4-nF8" secondAttribute="bottom" constant="17" id="YIa-nG-nZq"/>
+                                        <constraint firstItem="D7W-G5-Swq" firstAttribute="leading" secondItem="6VT-PA-w7X" secondAttribute="leadingMargin" constant="-16" id="Yrx-k0-6DO"/>
+                                        <constraint firstItem="D7W-G5-Swq" firstAttribute="top" secondItem="6VT-PA-w7X" secondAttribute="topMargin" constant="-11" id="ebD-cC-vSZ"/>
+                                        <constraint firstItem="7r8-R4-nF8" firstAttribute="leading" secondItem="6kv-xg-215" secondAttribute="leading" id="gM2-gr-DN7"/>
+                                        <constraint firstItem="O8I-Ni-kQu" firstAttribute="top" secondItem="6kv-xg-215" secondAttribute="bottom" constant="14" id="lYm-4L-tVl"/>
+                                        <constraint firstItem="D7W-G5-Swq" firstAttribute="centerY" secondItem="6VT-PA-w7X" secondAttribute="centerY" id="oAg-lH-z2n"/>
+                                        <constraint firstAttribute="trailing" secondItem="O8I-Ni-kQu" secondAttribute="trailing" constant="123" id="rwM-FN-UiQ"/>
+                                        <constraint firstItem="7r8-R4-nF8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="O8I-Ni-kQu" secondAttribute="leading" id="usT-WQ-Tov"/>
+                                        <constraint firstItem="O8I-Ni-kQu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6kv-xg-215" secondAttribute="leading" id="y0G-29-RrH"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -94,7 +135,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cQW-uQ-kQj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1534.7826086956522" y="470.75892857142856"/>
+            <point key="canvasLocation" x="1533.75" y="470.07042253521126"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="Zlg-LH-7kP">

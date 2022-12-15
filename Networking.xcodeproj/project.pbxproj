@@ -17,6 +17,7 @@
 		C6A7F3A72948D24B00F5AEF1 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A7F3A62948D24B00F5AEF1 /* ImageViewController.swift */; };
 		C6A7F3A92948D25C00F5AEF1 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A7F3A82948D25C00F5AEF1 /* CoursesViewController.swift */; };
 		C6A7F3AC2949CE5800F5AEF1 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A7F3AB2949CE5800F5AEF1 /* Course.swift */; };
+		C6A7F3AE294B2F8500F5AEF1 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A7F3AD294B2F8500F5AEF1 /* CourseCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C6A7F3A62948D24B00F5AEF1 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		C6A7F3A82948D25C00F5AEF1 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		C6A7F3AB2949CE5800F5AEF1 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		C6A7F3AD294B2F8500F5AEF1 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,8 @@
 				C62596AC294886F2001EEDC2 /* SceneDelegate.swift */,
 				C6A7F3AA2948D30C00F5AEF1 /* ViewControllers */,
 				C6A7F3AB2949CE5800F5AEF1 /* Course.swift */,
+				C679B5942948C92D00B4EB87 /* UserActionCell.swift */,
+				C6A7F3AD294B2F8500F5AEF1 /* CourseCell.swift */,
 				C62596B0294886F2001EEDC2 /* Main.storyboard */,
 				C62596B3294886F3001EEDC2 /* Assets.xcassets */,
 				C62596B5294886F3001EEDC2 /* LaunchScreen.storyboard */,
@@ -80,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				C679B5922948C6B900B4EB87 /* MainViewController.swift */,
-				C679B5942948C92D00B4EB87 /* UserActionCell.swift */,
 				C6A7F3A62948D24B00F5AEF1 /* ImageViewController.swift */,
 				C6A7F3A82948D25C00F5AEF1 /* CoursesViewController.swift */,
 			);
@@ -162,6 +165,7 @@
 				C6A7F3AC2949CE5800F5AEF1 /* Course.swift in Sources */,
 				C6A7F3A92948D25C00F5AEF1 /* CoursesViewController.swift in Sources */,
 				C62596AB294886F2001EEDC2 /* AppDelegate.swift in Sources */,
+				C6A7F3AE294B2F8500F5AEF1 /* CourseCell.swift in Sources */,
 				C62596AD294886F2001EEDC2 /* SceneDelegate.swift in Sources */,
 				C6A7F3A72948D24B00F5AEF1 /* ImageViewController.swift in Sources */,
 				C679B5932948C6B900B4EB87 /* MainViewController.swift in Sources */,
