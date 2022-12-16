@@ -50,6 +50,9 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="userActionLabel" destination="UZU-vm-TbX" id="r6X-he-n7f"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -101,8 +104,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8I-Ni-kQu">
-                                            <rect key="frame" x="166" y="69" width="31" height="15"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8I-Ni-kQu">
+                                            <rect key="frame" x="166" y="57" width="31" height="44"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -124,6 +127,12 @@
                                         <constraint firstItem="O8I-Ni-kQu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6kv-xg-215" secondAttribute="leading" id="y0G-29-RrH"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="courseImage" destination="D7W-G5-Swq" id="kIz-S1-cbY"/>
+                                    <outlet property="courseNameLabel" destination="7r8-R4-nF8" id="hAq-nC-rRm"/>
+                                    <outlet property="numberOfLessons" destination="6kv-xg-215" id="vZQ-mm-LJD"/>
+                                    <outlet property="numberOfTests" destination="O8I-Ni-kQu" id="QRN-vm-LsS"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
