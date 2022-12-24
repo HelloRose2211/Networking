@@ -14,6 +14,8 @@
 		C62596B7294886F3001EEDC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62596B5294886F3001EEDC2 /* LaunchScreen.storyboard */; };
 		C679B5932948C6B900B4EB87 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679B5922948C6B900B4EB87 /* MainViewController.swift */; };
 		C679B5952948C92D00B4EB87 /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679B5942948C92D00B4EB87 /* UserActionCell.swift */; };
+		C6A5A89B2951BD97003C13F0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A5A89A2951BD97003C13F0 /* NetworkManager.swift */; };
+		C6A5A89E2956F17F003C13F0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C6A5A89D2956F17F003C13F0 /* Alamofire */; };
 		C6A7F3A72948D24B00F5AEF1 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A7F3A62948D24B00F5AEF1 /* ImageViewController.swift */; };
 		C6A7F3A92948D25C00F5AEF1 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A7F3A82948D25C00F5AEF1 /* CoursesViewController.swift */; };
 		C6A7F3AC2949CE5800F5AEF1 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A7F3AB2949CE5800F5AEF1 /* Course.swift */; };
@@ -30,6 +32,7 @@
 		C62596B8294886F3001EEDC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C679B5922948C6B900B4EB87 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C679B5942948C92D00B4EB87 /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
+		C6A5A89A2951BD97003C13F0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C6A7F3A62948D24B00F5AEF1 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		C6A7F3A82948D25C00F5AEF1 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		C6A7F3AB2949CE5800F5AEF1 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
@@ -41,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A5A89E2956F17F003C13F0 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +77,7 @@
 				C679B5942948C92D00B4EB87 /* UserActionCell.swift */,
 				C6A7F3AD294B2F8500F5AEF1 /* CourseCell.swift */,
 				C62596B0294886F2001EEDC2 /* Main.storyboard */,
+				C6A5A89A2951BD97003C13F0 /* NetworkManager.swift */,
 				C62596B3294886F3001EEDC2 /* Assets.xcassets */,
 				C62596B5294886F3001EEDC2 /* LaunchScreen.storyboard */,
 				C62596B8294886F3001EEDC2 /* Info.plist */,
@@ -106,6 +111,9 @@
 			dependencies = (
 			);
 			name = Networking;
+			packageProductDependencies = (
+				C6A5A89D2956F17F003C13F0 /* Alamofire */,
+			);
 			productName = Networking;
 			productReference = C62596A7294886F2001EEDC2 /* Networking.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +142,9 @@
 				Base,
 			);
 			mainGroup = C625969E294886F2001EEDC2;
+			packageReferences = (
+				C6A5A89C2956F17F003C13F0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = C62596A8294886F2001EEDC2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -161,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A5A89B2951BD97003C13F0 /* NetworkManager.swift in Sources */,
 				C679B5952948C92D00B4EB87 /* UserActionCell.swift in Sources */,
 				C6A7F3AC2949CE5800F5AEF1 /* Course.swift in Sources */,
 				C6A7F3A92948D25C00F5AEF1 /* CoursesViewController.swift in Sources */,
@@ -386,6 +398,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C6A5A89C2956F17F003C13F0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C6A5A89D2956F17F003C13F0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6A5A89C2956F17F003C13F0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C625969F294886F2001EEDC2 /* Project object */;
 }
