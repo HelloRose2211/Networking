@@ -90,7 +90,7 @@ extension CoursesViewController {
         )
         NetworkManager.shared.postDataWithAlamofire(Link.postRequest.rawValue, data: course) { result in
             switch result {
-            case .success(let courses):
+            case .success(let course):
                 self.courses.append(course)
                 self.tableView.reloadData()
             case .failure(let error):
