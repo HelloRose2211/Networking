@@ -52,6 +52,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="userActionLabel" destination="UZU-vm-TbX" id="r6X-he-n7f"/>
+                                    <segue destination="4xV-kd-T7e" kind="show" id="KPB-g4-O0b"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -195,6 +196,9 @@
             <point key="canvasLocation" x="-239.13043478260872" y="14.732142857142856"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="KPB-g4-O0b"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
